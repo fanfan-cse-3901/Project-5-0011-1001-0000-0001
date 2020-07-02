@@ -5,9 +5,9 @@ var priorValue = "";
 var result = "";
 var i, j, k;
 
-var number = document.getElementsByClassName("number");
+var number = document.getElementsByName("number");
 var display = document.getElementById("display");
-var operation = document.getElementsByClassName("operation");
+var operation = document.getElementsByName("operation");
 
 var getNum = function() {
   // display number once user clicked it
