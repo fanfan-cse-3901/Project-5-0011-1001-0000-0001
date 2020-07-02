@@ -53,4 +53,5 @@ function memMinus(){
 }
 function memStore(){
     // not sure what this does yet
+    // Kevin: store current number in display to memory
 }
