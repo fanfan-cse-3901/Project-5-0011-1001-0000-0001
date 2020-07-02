@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- File Created on 07/01/2020 by Yifan Yao -->
+<!-- File Edited on 07/02/2020 by Amanda Cheng: adding Ids and included functions, modified to fit js -->
 <html lang="en" class="nojs" id="home">
     <head>
         <title>Calculator</title>
@@ -12,32 +13,40 @@
         <h1>Calculator</h1>
         <div id="calculator">
             <!-- row 1 -->
-            <button id="clear" class="clear">C</button>
-            <input type="text" class="display" value="0" readonly />
-            <!-- row 2 -->
-            <button class="operation" value="MS">MS</button>
-            <button class="operation" value="MR">MR</button>
-            <button class="operation" value="M+">M+</button>
-            <!-- row 3 -->
-            <button class="number" value="7">7</button>
-            <button class="number" value="8">8</button>
-            <button class="number" value="9">9</button>
-            <button class="operation" value="+">+</button>
-            <!-- row 4 -->
-            <button class="number" value="4">4</button>
-            <button class="number" value="5">5</button>
-            <button class="number" value="6">6</button>
-            <button class="operation" value="-">-</button>
-            <!-- row 5 -->
-            <button class="number" value="1">1</button>
-            <button class="number" value="2">2</button>
-            <button class="number" value="3">3</button>
-            <button class="operation" value="*">*</button>
-            <!-- row 6 -->
-            <button class="number" value="0">0</button>
-            <button class="number" value=".">.</button>
-            <button class="operation" value="/">/</button>
-            <button class="operation" value="=">=</button>
+<!--           <div class="display">0</div>-->
+            <div>
+                <input type="text" class="display" value="0" readonly />
+            </div>
+            <button id="clear" onclick="clearDisplay(calculator.mem)">C</button>
+<!--            <input type="text" class="display" value="0" readonly />-->
+            <div id="calcKeys">
+                <!-- row 2 -->
+                <button class="operation" id="M+" value="M+">M+</button>
+                <button class="operation" id="M-" value="M-">M-</button>
+                <button class="operation" id="MC" value="MC">MC</button>
+                <button class="operation" id="MR" value="MR">MR</button>
+                <button class="operation" id="MS" value="MS">MS</button>
+                <!-- row 3 -->
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="operation" value="+">+</button>
+                <!-- row 4 -->
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="operation" value="-">-</button>
+                <!-- row 5 -->
+                <button class="number" value="1">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="operation" action= "mult" data-value="*">*</button>
+                <!-- row 6 -->
+                <button class="number" data-value="0">0</button>
+                <button class="number" data-value=".">.</button>
+                <button class="operation" data-value="/">/</button>
+                <button class="operation" data-value="=">=</button>
+            </div>
         </div>
         <script src="site.js"></script>
     </body>
