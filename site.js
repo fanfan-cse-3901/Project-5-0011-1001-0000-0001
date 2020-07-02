@@ -1,15 +1,15 @@
 // File Created on 07/01/2020 by Yifan Yao
 
-var currentValue = "";
-var priorValue = "";
-var result = "";
-var i, j, k;
+let currentValue = "";
+let priorValue = "";
+let result = "";
+let i, j, k;
 
-var number = document.getElementsByName("number");
-var display = document.getElementById("display");
-var operation = document.getElementsByName("operation");
+let number = document.getElementsByName("number");
+let display = document.getElementById("display");
+let operation = document.getElementsByName("operation");
 
-var getNum = function() {
+let getNum = function() {
   // display number once user clicked it
   if (display.value === "0") {
     // first digit when user clicked
@@ -20,6 +20,7 @@ var getNum = function() {
   } else {
     // add digit once user clicked on it
     display.value += this.value;
+    currentValue = display.value;
   }
 
   // disable "." once clicked
