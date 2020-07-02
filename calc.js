@@ -1,7 +1,7 @@
 // File Created on 07/01/2020 by Amanda Cheng
 
 // const calculator = document.querySelector('.calculator');
-/* Create objects for calcuator, display, and all the button keys */
+/* Create objects for calculator, display, and all the button keys */
 const calculator ={
     displayVal: '0',
     firstOp: null,
