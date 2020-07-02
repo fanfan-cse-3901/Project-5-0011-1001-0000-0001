@@ -1,0 +1,72 @@
+File created on 07/02/2020 by Kevin Dong
+Unit Testing for arithmetic_functions_parsing()
+
+console.log(arithmetic_expression_parsing([input]));
+
+1. Number I/O
+
+                input:      ["1"]
+                expected:   1
+                                            pass
+
+                input:      ["1", "2", "3"]
+                expected:   123
+                                            pass
+
+                input:      ["-", "1", "2", "3"]
+                expected:   -123
+                                            pass
+
+2. Parsing
+
+    return [op.value1, op.sign, op.value2].join('');
+
+                input:      ["1", "+", "1"]
+                expected:   1+1
+                                            pass
+
+                input:      ["1", "/", "1"]
+                expected:   1/1
+                                            pass
+
+                input:      ["-", "1", "+", "1"]
+                expected:   -1+1
+                                            pass
+
+3. Evaluating
+
+                input:      ["1", "+", "1"]
+                expected:   2
+                                            pass
+
+                input:      ["-", "1", "+", "1"]
+                expected:   0
+                                            pass
+
+                input:      ["1", "–", "1"]
+                expected:   0
+                                            pass
+
+                input:      ["-", "1", "–", "1"]
+                expected:   -2
+                                            pass
+
+                input:      ["1", "*", "5"]
+                expected:   5
+                                            pass
+
+                input:      ["-","1", "*", "1"]
+                expected:   -1
+                                            pass
+
+                input:      ["2", "/", "4"]
+                expected:   0.5
+                                            pass
+
+                input:      ["4", "/", "2"]
+                expected:   2
+                                            pass
+
+                input:      ["-", "4", "/", "2"]
+                expected:   -2
+                                            pass
