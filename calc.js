@@ -11,19 +11,7 @@ const calculator ={
 };
 const display = document.querySelector('.display')
 const keys = document.querySelector('.calcKeys')    //might not need this
-
-/* This will execute if user clicks on a button */
-// keys.addEventListener('click', b=>{
-//     if (b.target.matches('button')){    //only if the user clicks on a button, not anything else
-//         const key = b.target
-//         const val = key.textContent
-//         const displayedVal = display.textContent
-//
-//         if (val=='MC'){
-//             clearMC(calculator.mem)
-//         }
-//     }
-// })
+/* Get response from button clicking */
 document.getElementById("MC").addEventListener("click",clearMC)
 document.getElementById("MR").addEventListener("click",memReg)
 document.getElementById("MS").addEventListener("click",memStore)
