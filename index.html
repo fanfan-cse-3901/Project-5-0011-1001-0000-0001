@@ -15,9 +15,11 @@
             <!-- row 1 -->
             <div>
                 <input type="text" class="display" value="0" readonly />
+                <!-- change later
+                <input type="text" id="display" value="0" readonly />
+                <label for="display"></label> -->
             </div>
             <button id="clear" onclick="clearDisplay(calculator.mem)">C</button>
-<!--            <input type="text" class="display" value="0" readonly />-->
             <div id="calcKeys">
                 <!-- row 2 -->
                 <button class="operation" id="M+" value="M+">M+</button>
@@ -39,12 +41,12 @@
                 <button class="number" value="1">1</button>
                 <button class="number" value="2">2</button>
                 <button class="number" value="3">3</button>
-                <button class="operation" action= "mult" data-value="*">*</button>
+                <button class="operation" value="*">*</button>
                 <!-- row 6 -->
-                <button class="number" data-value="0">0</button>
-                <button class="number" data-value=".">.</button>
-                <button class="operation" data-value="/">/</button>
-                <button class="operation" data-value="=">=</button>
+                <button class="number" value="0">0</button>
+                <button class="number" value=".">.</button>
+                <button class="operation" value="/">/</button>
+                <button class="operation" value="=">=</button>
             </div>
         </div>
         <script src="site.js"></script>
