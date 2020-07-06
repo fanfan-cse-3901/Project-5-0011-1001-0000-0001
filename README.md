@@ -2,11 +2,21 @@
 ### JavaScript Calculator
 
 ### Roles
-* Overall Project Manager: Yifao Yao
+* Overall Project Manager: Yifan Yao
 * Coding Manager: Kevin Dong
 * Testing Manager: Troy Stein
 * Documentation Manager: Prachiti Garge
-* Honorable Mention: Amanda Cheng
+* Honorary Mention: Amanda Cheng
+
 ### Contributions
-Please list who did what for each part of the project.
-Also list if people worked together (pair programmed) on a particular section.
+#### Core functionality
+* Calculator HTML - Yifan Yao, Amanda Cheng, Prachiti Garge
+* Calculator CSS - Yifan Yao
+* User input - Yifan Yao
+* Memory - Amanda Cheng
+* Input parsing - Kevin Dong
+* Calculations - Prachiti Garge
+
+#### Extra functionality
+* Additional operations - Prachiti Garge
+* PEMDAS - Kevin Dong
