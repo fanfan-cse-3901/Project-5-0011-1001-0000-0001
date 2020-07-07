@@ -20,36 +20,49 @@
             </div>
             <button id="clear" onclick="clearDisplay(calculator.mem)">C</button>
             <div id="calcKeys">
+                <table>
+                    <!-- row 2 -->
+                    <tr>
+                        <td><button name="operation" id="M+" value="M+">M+</button></td>
+                        <td><button name="operation" id="M-" value="M-">M-</button></td>
+                        <td><button name="operation" id="MC" value="MC">MC</button></td>
+                        <td><button name="operation" id="MR" value="MR">MR</button></td>
+                        <td><button name="operation" id="MS" value="MS">MS</button></td>
+                        <td><!-- TODO need deg/rad --></td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                        <td><button name="operation" value="|x|">|x|</button></td>
+                        <td><button name="operation" value="1/x">1/x</button></td>
+                        <td><button name="operation" value="x_squared">sqr</button></td>
+                        <td><button name="operation" value="sqrt">sqrt</button></td>
+                        <td><button name="operation" value="%">%</button></td>
+                        <td><button name="number" value="7">7</button></td>
+                        <td><button name="number" value="8">8</button></td>
+                        <td><button name="number" value="9">9</button></td>
+                        <td><button name="operation" value="+">+</button></td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr></tr>
                 <!-- row 2 -->
-                <button name="operation" id="M+" value="M+">M+</button>
-                <button name="operation" id="M-" value="M-">M-</button>
-                <button name="operation" id="MC" value="MC">MC</button>
-                <button name="operation" id="MR" value="MR">MR</button>
-                <button name="operation" id="MS" value="MS">MS</button>
+
                 <!-- Work in progress begin -->
                 <!-- TODO need deg/rad -->
                 <!-- row 3 -->
-                <button name="operation" value="abs">abs</button>
-                <button name="operation" value="inv">inv</button>
-                <button name="operation" value="sqr">sqr</button>
-                <button name="operation" value="sqrt">sqrt</button>
+
                 <!-- row 4 -->
                 <!-- row 5 -->
                 <button name="operation" value="sin">sin</button>
                 <button name="operation" value="cos">cos</button>
                 <button name="operation" value="tan">tan</button>
-                <button name="operation" value="abs">|a|</button>
+
                 <!-- row 6 -->
                 <button name="operation" value="log">log</button>
                 <button name="operation" value="ln">ln</button>
-                <button name="operation" value="e">tan</button>
-                <button name="operation" value="pi">|a|</button>
+
                 <!-- Work in progress end -->
                 <!-- row 7 -->
-                <button name="number" value="7">7</button>
-                <button name="number" value="8">8</button>
-                <button name="number" value="9">9</button>
-                <button name="operation" value="+">+</button>
+
                 <!-- row 8 -->
                 <button name="number" value="4">4</button>
                 <button name="number" value="5">5</button>
@@ -65,9 +78,11 @@
                 <button name="number" value=".">.</button>
                 <button name="operation" value="/">/</button>
                 <button name="operation" value="=">=</button>
+                </table>
             </div>
         </div>
         <script src="site.js"></script>
+        <script src="global_handling.js"></script>
         <script src="calc.js"></script>
         <script sre="calculations.js"></script>
     </body>

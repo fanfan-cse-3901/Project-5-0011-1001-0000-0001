@@ -55,6 +55,12 @@ function arithmetic_operator(given){
         case 'abs':
             ret_val = Math.abs(given.value1);
             break;
+        default:
+            ret_val = 0;
+
     }
     return ret_val;
 }
+
+// pi = 3.1415926535897932384626433832795
+// e = 2.7182818284590452353602874713527
