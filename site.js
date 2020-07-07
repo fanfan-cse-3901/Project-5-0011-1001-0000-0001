@@ -9,7 +9,7 @@ let number = document.getElementsByName("number");
 let display = document.getElementById("display");
 let operation = document.getElementsByName("operation");
 
-let getNum = function() {
+function getNum() {
   // display number once user clicked it
   if (display.value === "0") {
     // first digit when user clicked
@@ -22,14 +22,35 @@ let getNum = function() {
     display.value += this.value;
     currentValue = display.value;
   }
-
-  // disable "." once clicked
-  if (this.value === ".") {
-    this.disabled = true;
-  }
 };
+
+// once value in display matches certain criteria, then disable button
+// otherwise, enable it
+// regExp: condition to disable button
+// buttonId: the button need to be disabled, selected via ID
+function disableButton(regExp, buttonId) {
+  let disabledButton = document.getElementById(buttonId);
+
+  if (regExp.test(display.value)) {
+    disabledButton.disabled = true;
+  } else {
+    disabledButton.disabled = false;
+  }
+}
+
+display.addEventListener("input", function () {
+  if (/^\d+(\.)?\d*$/.test(this.value)) {
+    currentValue = this.value;
+    console.log(currentValue);
+  } else {
+    this.value = currentValue;
+    console.log(currentValue);
+  }
+
+  disableButton(/\./, ".");
+});
 
 // when user clicked any button from "number" class
 for (i = 0, j = number.length; i < j; i++) {
-  number[i].onclick = getNum;
+  number[i].addEventListener("click", getNum, false);
 }

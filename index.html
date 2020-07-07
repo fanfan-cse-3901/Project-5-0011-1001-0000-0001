@@ -15,7 +15,7 @@
         <div id="calculator">
             <!-- row 1 -->
             <div>
-                <input type="text" class="display" id="display" value="0" readonly />
+                <input type="text" class="display" id="display" value="0" />
                 <label for="display"></label>
             </div>
             <button id="clear" onclick="clearDisplay(calculator.mem)">C</button>
@@ -43,26 +43,21 @@
                         <td><button name="operation" value="+">+</button></td>
                     </tr>
                     <!-- row 4 -->
-                    <tr></tr>
+                <tr></tr>
                 <!-- row 2 -->
-
                 <!-- Work in progress begin -->
                 <!-- TODO need deg/rad -->
                 <!-- row 3 -->
-
                 <!-- row 4 -->
                 <!-- row 5 -->
                 <button name="operation" value="sin">sin</button>
                 <button name="operation" value="cos">cos</button>
                 <button name="operation" value="tan">tan</button>
-
                 <!-- row 6 -->
                 <button name="operation" value="log">log</button>
                 <button name="operation" value="ln">ln</button>
-
                 <!-- Work in progress end -->
                 <!-- row 7 -->
-
                 <!-- row 8 -->
                 <button name="number" value="4">4</button>
                 <button name="number" value="5">5</button>
@@ -75,15 +70,15 @@
                 <button name="operation" value="*">*</button>
                 <!-- row 10 -->
                 <button name="number" value="0">0</button>
-                <button name="number" value=".">.</button>
+                <button name="number" id="." value=".">.</button>
                 <button name="operation" value="/">/</button>
                 <button name="operation" value="=">=</button>
-                </table>
-            </div>
+            </table>
         </div>
-        <script src="site.js"></script>
-        <script src="global_handling.js"></script>
-        <script src="calc.js"></script>
-        <script sre="calculations.js"></script>
-    </body>
+    </div>
+    <script src="site.js"></script>
+    <script src="global_handling.js"></script>
+    <script src="calc.js"></script>
+    <script sre="calculations.js"></script>
+</body>
 </html>
