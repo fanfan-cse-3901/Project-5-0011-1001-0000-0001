@@ -49,15 +49,17 @@ document.getElementById("clear").addEventListener("click",clearDisplay)
 function clearDisplay(){
     let display = document.querySelector('.display')
     display.value = '0'
-    calculator.firstOp = null
-    calculator.waitForSecondOp=false
-    calculator.mem = calculator.mem.splice(1,calculator.mem.length) //1 because 0 is first
-    calculator.op= null
+    //calculator.firstOp = null
+    //calculator.waitForSecondOp=false
+    clearMC()
+    //calculator.op= null
 }
 
-function clearMC(calc){
+function clearMC(){
     // remove all elements from the array
-    calc.mem.splice(0,calc.mem.length,0)
+    calculator.mem.splice(0,calculator.mem.length,0)
+    console.log("The array MC  " + calculator.mem )
+    console.log("The array MC size  " + calculator.mem.length )
 }
 function memReg(){
     // add up all the sum of memory array
