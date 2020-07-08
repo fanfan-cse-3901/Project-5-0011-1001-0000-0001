@@ -1,28 +1,11 @@
 // File Created on 07/01/2020 by Yifan Yao
 
 let currentValue = "";
-let priorValue = "";
-let result = "";
-let i, j, k;
+let i, j;
 
 let number = document.getElementsByName("number");
 let display = document.getElementById("display");
 let operation = document.getElementsByName("operation");
-
-function getNum() {
-  // display number once user clicked it
-  if (display.value === "0") {
-    // first digit when user clicked
-    display.value = this.value;
-    if (this.value === ".") {
-      display.value = "0.";
-    }
-  } else {
-    // add digit once user clicked on it
-    display.value += this.value;
-    currentValue = display.value;
-  }
-};
 
 // once value in display matches certain criteria, then disable button
 // otherwise, enable it
@@ -37,6 +20,21 @@ function disableButton(regExp, buttonId) {
     disabledButton.disabled = false;
   }
 }
+
+// display number once user clicked it
+function getNum() {
+  if (display.value === "0") {
+    display.value = this.value; // first digit when user clicked
+    if (this.value === ".") {
+      display.value = "0.";
+    }
+  } else {
+    display.value += this.value; // add digit once user clicked on it
+    currentValue = display.value;
+  }
+
+  disableButton(/\./, ".");
+};
 
 display.addEventListener("input", function () {
   if (/^\d+(\.)?\d*$/.test(this.value)) {
