@@ -6,7 +6,7 @@ var maxLength = 10;
 var hist = new Array(maxLength);
 
 function updateHistory(){
-    if (hist.length>maxLength){
+    if (hist.length==maxLength){
         hist.shift();
         hist.shift();
     }
