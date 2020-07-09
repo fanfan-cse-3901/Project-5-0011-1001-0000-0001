@@ -51,6 +51,18 @@ button {
   width: 100px;
 }
 
+input {
+  width: 80%;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  height: 2.4444444444em; /* 44 / 18 = 2.4444444444 */
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  margin-bottom: 0;
+}
+
 .history, .hist_header{
   display: flex;
   flex-direction: column;
