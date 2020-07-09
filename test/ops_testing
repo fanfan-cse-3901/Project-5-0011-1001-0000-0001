@@ -1,4 +1,5 @@
 File created on 07/02/2020 by Kevin Dong
+File edited on 07/07/2020 by Kevin Dong: More tests
 Unit Testing for arithmetic_functions_parsing()
 
 console.log(arithmetic_expression_parsing([input]));
@@ -25,7 +26,7 @@ console.log(arithmetic_expression_parsing([input]));
                 expected:   1+1
                                             pass
 
-                input:      ["1", "/", "1"]
+                input:      ["1", "÷", "1"]
                 expected:   1/1
                                             pass
 
@@ -51,22 +52,42 @@ console.log(arithmetic_expression_parsing([input]));
                 expected:   -2
                                             pass
 
-                input:      ["1", "*", "5"]
+                input:      ["1", "×", "5"]
                 expected:   5
                                             pass
 
-                input:      ["-","1", "*", "1"]
+                input:      ["-","1", "×", "1"]
                 expected:   -1
                                             pass
 
-                input:      ["2", "/", "4"]
+                input:      ["2", "÷", "4"]
                 expected:   0.5
                                             pass
 
-                input:      ["4", "/", "2"]
+                input:      ["4", "÷", "2"]
                 expected:   2
                                             pass
 
-                input:      ["-", "4", "/", "2"]
+                input:      ["-", "4", "÷", "2"]
                 expected:   -2
+                                            pass
+
+                input:      ["1", "÷", "0"]
+                expected: Infinity
+                                            pass
+
+                input:      ["1", "÷"]
+                expected: NaN
+                                            pass
+
+                input:      ["1", "×"]
+                expected: NaN
+                                            pass
+
+                input:      ["1", "+"]
+                expected: NaN
+                                            pass
+
+                input:      ["1", "-"]
+                expected: NaN
                                             pass
