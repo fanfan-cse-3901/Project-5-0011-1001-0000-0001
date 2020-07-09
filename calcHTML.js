@@ -67,7 +67,8 @@ nums.forEach(function (elt){
         document.writeln("<td><button name=\"operation\" value=\""+ops[elt/3]+"\">"+ops[elt/3]+"</button></td>");
        document.writeln("</tr>") ;
     }
-})
+});
+document.writeln("</table></div>");
 //Tests for calculator set up
 //Test 1 //Success
 // 7 8 9

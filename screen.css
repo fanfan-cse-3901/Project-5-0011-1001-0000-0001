@@ -43,3 +43,14 @@ body {
   padding-left: 5%;
   padding-right: 5%;
 }
+/* Created on 07/08/2020 by Troy Stein*/
+td{
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+button{
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+}
