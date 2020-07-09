@@ -1,0 +1,359 @@
+// File Created on 07/08/2020 by Prachiti Garge
+
+// Single number is display, nothing in display_upper
+Variables:
+    display_upper.value = ""
+    displayStr.upper = ""
+    displayStr.lower = "6"
+    display.value = "6"
+    displayStr.exp = []
+Functions:
+    1) sinFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    2) tanFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    3) sqrtFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    4) piFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    5) percentFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    6) minusFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+
+// Single number is display, inverse of number in display_upper
+Variables:
+    display_upper.value = "1/5"
+    displayStr.upper = "1/5"
+    displayStr.lower = "0.2"
+    display.value = "0.2"
+    displayStr.exp = ["0.2"]
+Functions:
+    1) cosFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    2) arctanFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    3) invFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    4) logFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    5) factFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    6) e_to_xFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    7) eFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+// # - in display_upper
+Variables:
+    display_upper.value = "25-"
+    displayStr.upper = "25-"
+    displayStr.lower = "25"
+    display.value = "25"
+    displayStr.exp = ["25" , "-"]
+Functions:
+    1) arcsinFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    2) sqrFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    3) absFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    4) lnFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    5) percentFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    6) plusFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    7) multiplyFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+// func(#) * in display_upper
+Variables:
+    display_upper.value = "log(45)×"
+    displayStr.upper = "log(45)×"
+    displayStr.lower = "1.6532125137753436793763169117857"
+    display.value = "1.6532125137753436793763169117857"
+    displayStr.exp = [ "1.6532125137753436793763169117857", "×"]
+Functions:
+    1) arccosFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    2) ten_to_xFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    3) invFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    4) absFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    5) logFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    6) percentFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    7) divideFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+// # + e^(log(#)) in display_upper
+Variables:
+    display_upper.value = "27+e^(log(5))"
+    displayStr.upper = "27+e^(log(5))"
+    displayStr.lower = "2.011679618732933671079071995709"
+    display.value = "2.011679618732933671079071995709"
+    displayStr.exp = ["27","+","2.011679618732933671079071995709"]
+Functions:
+    1) percentFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    2) invFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    3) multiplyFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    4) piFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+
+
+// # - tan(1/#) ÷) in display_upper
+Variables:
+    display_upper.value = "84-tan(1/5)÷"
+    displayStr.upper = "84-tan(1/5)÷"
+    displayStr.lower = "0.00349067268159625031851568605602"
+    display.value = "0.00349067268159625031851568605602"
+    displayStr.exp = ["84","-","0.00349067268159625031851568605602"]
+Functions:
+    1) percentFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    2) lnFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
+    3) tanFunc
+        Expected:
+            display_upper.value =
+            displayStr.upper =
+            displayStr.lower =
+            display.value =
+            displayStr.exp =
+        Result:
+
