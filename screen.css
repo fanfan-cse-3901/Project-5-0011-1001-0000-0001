@@ -82,10 +82,11 @@ input {
 .switch {
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 41px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 78px;
+  height: 17px;
+  top: 25px;
+  margin: 20px 10px 10px;
+  padding: 12.5px 10px;
 }
 
 .switch input {
@@ -102,36 +103,31 @@ input {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
   transition: .4s;
   text-align: center;
   text-size: 1em;
   padding: 10px;
+  border-radius: 36px;
+  font-size: medium;
 }
 
 .slider:before {
   position: absolute;
   content: "";
   height: 36px;
-  width: 2.56em; /*41/16*/
-  left: 4px;
+  width: 2.44em; /*41/16*/
+  left: 10px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
   transition: .4s;
   text-align: center;
   text-size: 1em;
+  border-radius: 36px;
 }
 input:checked + .slider {
   background-color: #2196F3;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
 input:checked + .slider:before {
-  -webkit-transform: translateX(43px);
-  -ms-transform: translateX(43px);
-  transform: translateX(43px);
+  transform: translateX(40px);
 }
