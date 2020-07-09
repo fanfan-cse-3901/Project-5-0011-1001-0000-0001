@@ -60,6 +60,7 @@ function clearMC(){
   calculator.mem.splice(0,calculator.mem.length,0)
   console.log("The array MC  " + calculator.mem )
   console.log("The array MC size  " + calculator.mem.length )
+  clear = true;
 }
 function memReg(){
   // add up all the sum of memory array
@@ -74,7 +75,7 @@ function memReg(){
   //return calc.mem[calc.mem.length-1]
   display.value=""+calculator.mem[calculator.mem.length-1]
   //document.getElementById("display").value = ""+calculator.mem[calculator.mem.length-1];
-
+  clear = true;
 }
 function memAdd(){
   // Check that the calculator memory array is not bigger than
@@ -87,7 +88,7 @@ function memAdd(){
   let lastVal = calculator.mem.pop();
   calculator.mem.push(displayNum+lastVal)
   console.log("The array is: " + calculator.mem)
-
+  clear = true;
 }
 function memMinus(){
   //let display = document.getElementById('display')
@@ -97,6 +98,7 @@ function memMinus(){
   let lastVal = calculator.mem.pop();
   calculator.mem.push(lastVal-displayNum)
   console.log("The array M- (5)  " + calculator.mem )
+  clear = true;
 }
 
 function memStore(){
@@ -108,6 +110,7 @@ function memStore(){
   if (calculator.mem.length >1){
     calculator.mem.shift()
   }
+  clear = true;
 }
 //
 // memStore(calculator)
