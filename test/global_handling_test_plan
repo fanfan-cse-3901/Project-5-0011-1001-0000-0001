@@ -1,0 +1,351 @@
+// File Created on 07/08/2020 by Prachiti Garge
+// All angles are degrees
+
+// 1) Single number is display, nothing in display_upper
+Variables:
+    display_upper.value = ""
+    displayStr.upper = ""
+    displayStr.lower = "6"
+    display.value = "6"
+    displayStr.exp = []
+Functions:
+    1) sinFunc
+        Expected:
+            display_upper.value = "sin(6)"
+            displayStr.upper = "sin(6)"
+            displayStr.lower = "0.1045284632676534713998341548025"
+            display.value = "0.1045284632676534713998341548025"
+            displayStr.exp = ["0.1045284632676534713998341548025"]
+        Result:
+
+    2) tanFunc
+        Expected:
+            display_upper.value = "tan(6)"
+            displayStr.upper = "tan(6)"
+            displayStr.lower = "0.10510423526567646251150238013988"
+            display.value = "0.10510423526567646251150238013988"
+            displayStr.exp = ["0.10510423526567646251150238013988"]
+        Result:
+
+    3) sqrtFunc
+        Expected:
+            display_upper.value = "sqrt(6)"
+            displayStr.upper = "sqrt(6)"
+            displayStr.lower = "2.4494897427831780981972840747059"
+            display.value = "2.4494897427831780981972840747059"
+            displayStr.exp = ["2.4494897427831780981972840747059"]
+        Result:
+
+    4) piFunc
+        Expected:
+            display_upper.value = ""
+            displayStr.upper = ""
+            displayStr.lower = "3.1415926535897932384626433832795"
+            display.value = "3.1415926535897932384626433832795"
+            displayStr.exp = []
+        Result:
+
+    5) percentFunc
+        Expected:
+            display_upper.value = "0"
+            displayStr.upper = "0"
+            displayStr.lower = "0"
+            display.value = "0"
+            displayStr.exp = ["0"]
+        Result:
+
+    6) minusFunc
+        Expected:
+            display_upper.value = "6-"
+            displayStr.upper = "6-"
+            displayStr.lower = "6"
+            display.value = "6"
+            displayStr.exp = ["6","-"]
+        Result:
+
+
+// 2) Single number is display, inverse of number in display_upper
+Variables:
+    display_upper.value = "1/5"
+    displayStr.upper = "1/5"
+    displayStr.lower = "0.2"
+    display.value = "0.2"
+    displayStr.exp = ["0.2"]
+Functions:
+    1) cosFunc
+        Expected:
+            display_upper.value = "cos(1/5)"
+            displayStr.upper = "cos(1/5)"
+            displayStr.lower = "0.99999390765779038147798193078624"
+            display.value = "0.99999390765779038147798193078624"
+            displayStr.exp = ["0.99999390765779038147798193078624"]
+        Result:
+
+    2) arctanFunc
+        Expected:
+            display_upper.value = "arctan(1/5)"
+            displayStr.upper = "arctan(1/5)"
+            displayStr.lower = "11.30993247402021308647450543834"
+            display.value = "11.30993247402021308647450543834"
+            displayStr.exp = ["11.30993247402021308647450543834"]
+        Result:
+
+    3) invFunc
+        Expected:
+            display_upper.value = "1/(1/(5))"
+            displayStr.upper = "1/(1/(5))"
+            displayStr.lower = "5"
+            display.value = "5"
+            displayStr.exp = ["5"]
+        Result:
+
+    4) logFunc
+        Expected:
+            display_upper.value = "log(1/(5))"
+            displayStr.upper = "log(1/(5))"
+            displayStr.lower = "-0.69897000433601880478626110527551"
+            display.value = "-0.69897000433601880478626110527551"
+            displayStr.exp = ["-0.69897000433601880478626110527551"]
+        Result:
+
+    5) factFunc
+        Expected:
+            display_upper.value = "fact(1/(5))"
+            displayStr.upper = "fact(1/(5))"
+            displayStr.lower = "0.91816874239976061064095165518583"
+            display.value = "0.91816874239976061064095165518583"
+            displayStr.exp = ["0.91816874239976061064095165518583"]
+        Result:
+
+    6) e_to_xFunc
+        Expected:
+            display_upper.value = "e^(1/(5))"
+            displayStr.upper = "e^(1/(5))"
+            displayStr.lower = "1.2214027581601698339210719946397"
+            display.value = "1.2214027581601698339210719946397"
+            displayStr.exp = ["1.2214027581601698339210719946397"]
+        Result:
+
+    7) eFunc
+        Expected:
+            display_upper.value = "1/(5)"
+            displayStr.upper = "1/(5)"
+            displayStr.lower = "2.7182818284590452353602874713527"
+            display.value = "2.7182818284590452353602874713527"
+            displayStr.exp = ["2.7182818284590452353602874713527"]
+        Result:
+
+// 3) # - in display_upper
+Variables:
+    display_upper.value = "0.2-"
+    displayStr.upper = "0.2-"
+    displayStr.lower = "0.2"
+    display.value = "0.2"
+    displayStr.exp = ["0.2" , "-"]
+Functions:
+    1) arcsinFunc
+        Expected:
+            display_upper.value = "0.2-arcsin(0.2)"
+            displayStr.upper = "0.2-arcsin(0.2)"
+            displayStr.lower = "11.536959032815487690137371510513"
+            display.value = "11.536959032815487690137371510513"
+            displayStr.exp = ["0.2","-","11.536959032815487690137371510513"]
+        Result:
+
+    2) sqrFunc
+        Expected:
+            display_upper.value = "0.2-sqr(0.2)"
+            displayStr.upper = "0.2-sqr(0.2)"
+            displayStr.lower = "0.04"
+            display.value = "0.04"
+            displayStr.exp = ["0.2","-","0.04"]
+        Result:
+
+    3) absFunc
+        Expected:
+            display_upper.value = "0.2-abs(0.2)"
+            displayStr.upper = "0.2-abs(0.2)"
+            displayStr.lower = "0.2"
+            display.value = "0.2"
+            displayStr.exp = ["0.2","-","0.2"]
+        Result:
+
+    4) lnFunc
+        Expected:
+            display_upper.value =  "0.2-ln(0.2)"
+            displayStr.upper =  "0.2-ln(0.2)"
+            displayStr.lower = "-1.6094379124341003746007593332262"
+            display.value = "-1.6094379124341003746007593332262"
+            displayStr.exp = ["0.2","-","-1.6094379124341003746007593332262"]
+        Result:
+
+    5) percentFunc
+        Expected:
+            display_upper.value = "0.2-0.0004"
+            displayStr.upper = "0.2-0.0004"
+            displayStr.lower = "0.0004"
+            display.value = "0.0004"
+            displayStr.exp = ["0.2","-","0.0004"]
+        Result:
+
+    6) plusFunc
+        Expected:
+            display_upper.value = "0.2+"
+            displayStr.upper = "0.2+"
+            displayStr.lower = "0.2"
+            display.value = "0.2"
+            displayStr.exp = ["0.2","+"]
+        Result:
+
+    7) multiplyFunc
+        Expected:
+            display_upper.value = "0.2×"
+            displayStr.upper = "0.2×"
+            displayStr.lower = "0.2"
+            display.value = "0.2"
+            displayStr.exp = ["0.2","×"]
+        Result:
+
+// 4) func(#) * in display_upper
+Variables:
+    display_upper.value = "log(45)×"
+    displayStr.upper = "log(45)×"
+    displayStr.lower = "1.6532125137753436793763169117857"
+    display.value = "1.6532125137753436793763169117857"
+    displayStr.exp = [ "1.6532125137753436793763169117857", "×"]
+Functions:
+    1) factFunc
+        Expected:
+            display_upper.value = "log(45)×fact(1.6532125137753436793763169117857)"
+            displayStr.upper = "log(45)×fact(1.6532125137753436793763169117857)"
+            displayStr.lower = "1.488894589884253819943990290937"
+            display.value = "1.488894589884253819943990290937"
+            displayStr.exp = ["1.6532125137753436793763169117857", "×","1.488894589884253819943990290937"]
+        Result:
+
+    2) ten_to_xFunc
+        Expected:
+            display_upper.value = "log(45)×10^(1.6532125137753436793763169117857)"
+            displayStr.upper = "log(45)×10^(1.6532125137753436793763169117857)"
+            displayStr.lower = "45"
+            display.value = "45"
+            displayStr.exp = ["1.6532125137753436793763169117857", "×","45"]
+        Result:
+
+    3) invFunc
+        Expected:
+            display_upper.value = "1/(log(45))"
+            displayStr.upper = "1/(log(45))"
+            displayStr.lower = "0.60488291231014161648653861871042"
+            display.value = "0.60488291231014161648653861871042"
+            displayStr.exp = ["0.60488291231014161648653861871042"]
+        Result:
+
+    4) absFunc
+        Expected:
+            display_upper.value = "abs(log(45))"
+            displayStr.upper = "abs(log(45))"
+            displayStr.lower = "1.6532125137753436793763169117857"
+            display.value = "1.6532125137753436793763169117857"
+            displayStr.exp = ["1.6532125137753436793763169117857"]
+        Result:
+
+    5) logFunc
+        Expected:
+            display_upper.value = "log(45)×log(1.6532125137753436793763169117857)"
+            displayStr.upper = "log(45)×log(1.6532125137753436793763169117857)"
+            displayStr.lower = "0.21832868395724558653179953358639"
+            display.value = "0.21832868395724558653179953358639"
+            displayStr.exp = ["1.6532125137753436793763169117857","×","0.21832868395724558653179953358639"]
+        Result:
+
+    6) percentFunc
+        Expected:
+            display_upper.value = "log(45)×0.0165321251377534367937631691178"
+            displayStr.upper = "log(45)×0.0165321251377534367937631691178"
+            displayStr.lower = "0.0165321251377534367937631691178"
+            display.value = "0.0165321251377534367937631691178"
+            displayStr.exp = ["1.6532125137753436793763169117857","×","0.0165321251377534367937631691178"]
+        Result:
+
+    7) divideFunc
+        Expected:
+            display_upper.value = "log(45)÷"
+            displayStr.upper = "log(45)÷"
+            displayStr.lower = "1.6532125137753436793763169117857"
+            display.value = "1.6532125137753436793763169117857"
+            displayStr.exp = ["1.6532125137753436793763169117857","÷"]
+        Result:
+
+// 5) # + e^(log(#)) in display_upper
+Variables:
+    display_upper.value = "27+e^(log(5))"
+    displayStr.upper = "27+e^(log(5))"
+    displayStr.lower = "2.011679618732933671079071995709"
+    display.value = "2.011679618732933671079071995709"
+    displayStr.exp = ["27","+","2.011679618732933671079071995709"]
+Functions:
+    1) percentFunc
+        Expected:
+            display_upper.value = "27+0.5431534970578921"
+            displayStr.upper = "27+0.5431534970578921"
+            displayStr.lower = "0.5431534970578921"
+            display.value = "0.5431534970578921"
+            displayStr.exp = ["27","+","0.5431534970578921"]
+        Result:
+
+    2) invFunc
+        Expected:
+            display_upper.value = "27+1/(e^(log(5)))"
+            displayStr.upper = "27+1/(e^(log(5)))"
+            displayStr.lower = "0.49709704800302889767836299430999"
+            display.value = "0.49709704800302889767836299430999"
+            displayStr.exp = ["27","+","0.49709704800302889767836299430999"]
+        Result:
+
+    3) multiplyFunc
+        Expected:
+            display_upper.value = "27+e^(log(5))×"
+            displayStr.upper = "27+e^(log(5))×"
+            displayStr.lower = "2.011679618732933671079071995709"
+            display.value = "2.011679618732933671079071995709"
+            displayStr.exp = ["27","+","2.011679618732933671079071995709","×"]
+        Result:
+
+    4) piFunc
+        Expected:
+            display_upper.value = "27+"
+            displayStr.upper = "27+"
+            displayStr.lower = "3.1415926535897932384626433832795"
+            display.value = "3.1415926535897932384626433832795"
+            displayStr.exp = ["27","+"]
+        Result:
+
+
+
+// 6) # - tan(1/#) ÷ in display_upper
+Variables:
+    display_upper.value = "84-tan(1/5)÷"
+    displayStr.upper = "84-tan(1/5)÷"
+    displayStr.lower = "0.00349067268159625031851568605602"
+    display.value = "0.00349067268159625031851568605602"
+    displayStr.exp = ["84","-","0.00349067268159625031851568605602"]
+Functions:
+    1) lnFunc
+        Expected:
+            display_upper.value = "84-tan(1/(5))÷ln(0.00349067268159625031851568605602)"
+            displayStr.upper = "84-tan(1/(5))÷ln(0.00349067268159625031851568605602)"
+            displayStr.lower = "-5.6576608158977659604358224353639"
+            display.value = "-5.6576608158977659604358224353639"
+            displayStr.exp = ["84","-","0.00349067268159625031851568605602","÷","-5.6576608158977659604358224353639"]
+        Result:
+
+    2) tanFunc
+        Expected:
+            display_upper.value = "84-tan(1/(5))÷tan(0.00349067268159625031851568605602)"
+            displayStr.upper = "84-tan(1/(5))÷tan(0.00349067268159625031851568605602)"
+            displayStr.lower = "0.0000609237314786511341147165673"
+            display.value = "0.0000609237314786511341147165673"
+            displayStr.exp = ["84","-","0.00349067268159625031851568605602","÷","0.0000609237314786511341147165673"]
+        Result:
+
