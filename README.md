@@ -26,7 +26,7 @@
 
 ### Testing 
 * Unit testing with using console log and running test with 'node [file name]'. 
-  Everyone conducted unit testing for the Javascript. 
+  Everyone conducted unit testing for the Javascript. The unit test files are on test directory.
 * Integration testing  with operations and number buttons through html button clicking.
 * System testing: created a testing plan with all the operations, sequence of operations, error cases, etc.
   There is a system testing plan in the test directory.
@@ -42,3 +42,7 @@
 * If user selects a memory operation, the history buffer will be replaced by a memory buffer which shows the 
   current value in memory buffer. If user selects any other operation, the buffer changes back to history buffer again.
 * Users can also type in numbers to lower display.
+
+IMPORTANT NOTE: Like other calculators, it can calculate precisely to a maximum integer value threshold. After that,
+overflow occurs and the final result only outputs to its approximate value and ignore certain digits such as ones, tens,
+place, etc.
