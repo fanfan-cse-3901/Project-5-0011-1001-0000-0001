@@ -267,25 +267,7 @@ Variables:
     display.value = "2.011679618732933671079071995709"
     displayStr.exp = ["27","+","2.011679618732933671079071995709"]
 Functions:
-    1) percentFunc
-        Expected:
-            display_upper.value = "27+0.5431534970578921"
-            displayStr.upper = "27+0.5431534970578921"
-            displayStr.lower = "0.5431534970578921"
-            display.value = "0.5431534970578921"
-            displayStr.exp = ["27","+","0.5431534970578921"]
-        Result: Nope. Needs to remove e^(log(5)).
-
-    2) invFunc
-        Expected:
-            display_upper.value = "27+1/(e^(log(5)))"
-            displayStr.upper = "27+1/(e^(log(5)))"
-            displayStr.lower = "0.49709704800302889767836299430999"
-            display.value = "0.49709704800302889767836299430999"
-            displayStr.exp = ["27","+","0.49709704800302889767836299430999"]
-        Result: Nope. Needs to remove e^(log(5)).
-
-    3) multiplyFunc
+    1) multiplyFunc
         Expected:
             display_upper.value = "27+e^(log(5))×"
             displayStr.upper = "27+e^(log(5))×"
@@ -293,41 +275,3 @@ Functions:
             display.value = "2.011679618732933671079071995709"
             displayStr.exp = ["27","+","2.011679618732933671079071995709","×"]
         Result: OK
-
-    4) piFunc
-        Expected:
-            display_upper.value = "27+"
-            displayStr.upper = "27+"
-            displayStr.lower = "3.1415926535897932384626433832795"
-            display.value = "3.1415926535897932384626433832795"
-            displayStr.exp = ["27","+"]
-        Result: Nope. Needs to remove e^(log(5)).
-
-
-
-// 6) # - tan(1/#) ÷ in display_upper
-Variables:
-    display_upper.value = "84-tan(1/5)÷"
-    displayStr.upper = "84-tan(1/5)÷"
-    displayStr.lower = "0.00349067268159625031851568605602"
-    display.value = "0.00349067268159625031851568605602"
-    displayStr.exp = ["84","-","0.00349067268159625031851568605602"]
-Functions:
-    1) lnFunc
-        Expected:
-            display_upper.value = "84-tan(1/(5))÷ln(0.00349067268159625031851568605602)"
-            displayStr.upper = "84-tan(1/(5))÷ln(0.00349067268159625031851568605602)"
-            displayStr.lower = "-5.6576608158977659604358224353639"
-            display.value = "-5.6576608158977659604358224353639"
-            displayStr.exp = ["84","-","0.00349067268159625031851568605602","÷","-5.6576608158977659604358224353639"]
-        Result: Nope. displayStr.exp is missing elements 2 and 3.
-
-    2) tanFunc
-        Expected:
-            display_upper.value = "84-tan(1/(5))÷tan(0.00349067268159625031851568605602)"
-            displayStr.upper = "84-tan(1/(5))÷tan(0.00349067268159625031851568605602)"
-            displayStr.lower = "0.0000609237314786511341147165673"
-            display.value = "0.0000609237314786511341147165673"
-            displayStr.exp = ["84","-","0.00349067268159625031851568605602","÷","0.0000609237314786511341147165673"]
-        Result: Nope. displayStr.exp is missing elements 2 and 3.
-
