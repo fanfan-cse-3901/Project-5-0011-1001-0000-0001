@@ -1,0 +1,96 @@
+File created on 07/10/2020 by Amanda Cheng
+
+Unit Testing for memAdd(), memStore(), memMinus(), memReg(), clearMC() in calc.js
+
+console.log("The array at beginning:  " + calculator.mem);
+console.log("The array beginning size  " + calculator.mem.length);
+
+1. memAdd()
+                current memory: [0]
+                input:      0
+                expected:   0
+                                            pass
+
+                current memory: [1]
+                input:      1
+                expected:   1
+                                            pass
+
+                current memory: [1]
+                input:       2
+                expected:    3
+                                            pass
+
+                current memory: [2]
+                input:      -20
+                expected:   -18
+                                            pass
+
+2. AddMinus()
+                current memory: [0]
+                input:      0
+                expected:   0
+                                            pass
+
+                current memory: [1]
+                input:      1
+                expected:   0
+                                            pass
+
+                current memory: [1]
+                input:       2
+                expected:    -1
+                                            pass
+
+                current memory: [2]
+                input:      -20
+                expected:   22
+                                            pass
+3. memStore()
+                current memory: [0]
+                input:      0
+                expected:   0
+                expected size: 1
+                                            pass
+
+                current memory: [1]
+                input:      1
+                expected:   1
+                expected size: 1
+                                            pass
+
+                current memory: [1]
+                input:       2
+                expected:    2
+                expected size: 1
+                                            pass
+
+                current memory: [2]
+                input:      -20
+                expected:   -20
+                expected size: 1
+                                            pass
+
+4. memReg()
+
+        *The input should not matter and affect the expected value
+
+                current memory: [0]
+                input:      0
+                expected:   0
+                                            pass
+
+                current memory: [1]
+                input:      0
+                expected:   1
+                                            pass
+
+                current memory: [-1]
+                input:       2
+                expected:    -1
+                                            pass
+
+                current memory: [2]
+                input:      -20
+                expected:   2
+                                            pass
