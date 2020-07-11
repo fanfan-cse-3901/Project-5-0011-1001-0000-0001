@@ -52,7 +52,9 @@ button {
   margin: 10px;
   width: 100px;
 }
-
+#display_upper {
+  background-color: whitesmoke;
+}
 input {
   width: 80%;
   box-sizing: border-box;
