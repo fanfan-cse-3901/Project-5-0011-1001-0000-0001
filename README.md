@@ -15,14 +15,14 @@
 * User input - Yifan Yao
 * Memory - Amanda Cheng
 * Input parsing - Kevin Dong
-* Calculations - Prachiti Garge
+* Calculations, nesting and accumulation - Prachiti Garge
 
 #### Extra functionality
 * Additional operations - Prachiti Garge
-* PEMDAS - Kevin Dong
+* **EMDAS** - Kevin Dong
 * Dynamic history and memory buffer - Amanda Cheng
 * Degree-Radian Switch - Troy Stein
-* User-Input display - Yifan Yao
+* User-Input display (numbers) - Yifan Yao
 
 ### Testing 
 * Unit testing with using console log and running test with 'node [file name]'. 
@@ -30,6 +30,7 @@
 * Integration testing  with operations and number buttons through html button clicking.
 * System testing: created a testing plan with all the operations, sequence of operations, error cases, etc.
   There is a system testing plan in the test directory.
+* [Test Plan](test/test_plan.pdf)
 
 ### User Manual
 * Upon launching index.html, a web-page of a calculator will show with multiple operations, two input boxes 
@@ -42,6 +43,7 @@
 * If user selects a memory operation, the history buffer will be replaced by a memory buffer which shows the 
   current value in memory buffer. If user selects any other operation, the buffer changes back to history buffer again.
 * Users can also type in numbers to lower display.
+* When you are using scientific functions, only the current in the lower display will be processed.
 
 IMPORTANT NOTE: Like other calculators, it can calculate precisely to a maximum integer value threshold. After that,
 overflow occurs and the final result only outputs to its approximate value and ignore certain digits such as ones, tens,

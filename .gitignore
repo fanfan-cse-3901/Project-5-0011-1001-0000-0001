@@ -4,4 +4,3 @@
 **/node_modules
 **/Gemfile.lock
 **/package-lock.json
-**/lib/global_handling_old.js
