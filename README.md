@@ -40,5 +40,5 @@
   of 5 expression-value pairs. After doing more than 5 operations on calculator, the pairs will be saved in a FIFO 
   order where the first stored pair will be removed.
 * If user selects a memory operation, the history buffer will be replaced by a memory buffer which shows the 
-  current value in memory buffer. If user selects any other operation, the buffer changes back to history buffer again..
+  current value in memory buffer. If user selects any other operation, the buffer changes back to history buffer again.
 * Users can also type in numbers to lower display.
